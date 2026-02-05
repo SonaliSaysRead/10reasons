@@ -24,7 +24,18 @@
       <button onclick="showReason(9)">Reason 10</button>
     </div>
 
-    <div id="reason" class="reason"></div>
+    <!-- Pop-up (modal) -->
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-top">
+      <div id="modalTitle" class="modal-title">A reason I love you 💖</div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
+    </div>
+    <div id="modalText" class="modal-text"></div>
+    <button class="modal-ok" onclick="closeModal()">Aww 🥹</button>
+  </div>
+</div>
+
   </div>
 
   <script src="script.js"></script>
