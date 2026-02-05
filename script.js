@@ -11,12 +11,14 @@ const reasons = [
   "Because life is just better with you in it ❤️"
 ];
 
-const reasonBox = document.getElementById("reason");
+const modal = document.getElementById("modal");
+const modalText = document.getElementById("modalText");
 
 function showReason(index) {
-  reasonBox.classList.remove("show");
-  setTimeout(() => {
-    reasonBox.textContent = reasons[index];
-    reasonBox.classList.add("show");
-  }, 100);
+  modalText.textContent = reasons[index];
+  modal.classList.add("show");
+}
+
+function closeModal() {
+  modal.classList.remove("show");
 }
